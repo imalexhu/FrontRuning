@@ -22,6 +22,8 @@ const maximise = async(eth,pairToken,slippage, increase) =>{
 
 module.exports = maximise
 
+// TODO - you guys should read about unit testing.
+// use a unit testing library like jest, and add a bunch of unit test, and a script command to run unit tests. 
 // const test = () =>{
 //     let eth ={
 //         reserve : 740,

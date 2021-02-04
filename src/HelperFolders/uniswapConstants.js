@@ -3,6 +3,7 @@ require('dotenv').config()
 
 
 // Initialised all the constant variables I work with from the uniswap SDK
+// TODO - I have a feeling that the typically styling convention for constants  is: SHOUTY_SNAKE_CASE
 
 const { ChainId, WETH, Percent } = require('@uniswap/sdk');
 const ChainID = ChainId.MAINNET;

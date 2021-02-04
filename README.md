@@ -1,5 +1,6 @@
 # FrontRuning
 
+TODO - I would be as careful as possible with English. It is good practice to be make things as easy to understand as possible, future maintainers would appreciate it.
 
 This script was designed to frontrun transactions from the Uniswap V2 Router. 
 
@@ -24,3 +25,20 @@ I also has the sell function in the emitter because I had to wait untill their t
 A lot of the older code that was writen prior have not been refactored with new knowledge such as the if(condition) return
 
 I was very liberal with my use of async and await methods because I wasnt sure which part of my code would be asyncronous. I am aware that It is more costly than regular functions
+
+## Build instructions
+
+* TODO - it would nice to have build instructions either in the README or have a bunch of build scrips in the package.json. This would make it clear for anyone new to the project to just read the script or build instrcuctions and get started without having to think or know about anything, i.e.
+```
+"scripts": {
+    "test": "...",
+    "build": "...",
+    "start": "...",
+    "lint": "...",
+    "clean": "...",
+    "etc": "..."
+}
+* TODO - You can think about using Yeoman project generators (https://yeoman.io/learning/index.html). These just provide a quick and easy way to have a fully setup project with the following set up:
+    * linting
+    * code auto formatting
+    * etc

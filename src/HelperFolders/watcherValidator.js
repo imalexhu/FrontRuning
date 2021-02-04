@@ -6,6 +6,8 @@ const stable = ['0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2', '0xa0b86991c6218b3
 ]
 
 // Gets the significant figures of the token value, some tokens are in 6 significant figures while others at 18
+// TODO - refactor, I don't think the function name give a good indication of what the function actually does, e.g
+// calculateDecimals or getDecimals (is this getting decimals or significant figures? it could be important to specify and stay consitent for future maintainers)
 const precise = async (token) => {
     let sig = await axios.get(`https://api.ethplorer.io/getTokenInfo/${token}?apiKey=${process.env.TOKENKEY}`);
     decimals = sig.data.decimals
@@ -28,6 +30,7 @@ const getGas = async () => {
 
 
 // Filters out all emits and converts valuable emiits to filterTransactions that are turned back to index
+// TODO - be careful of trailing whitespace (spaces at the end of lines of code and etc.) 
 const viableEvent = async (event,myTrie,compareGas) => {
 
     let path = event.contractCall.params.path
